@@ -10,6 +10,7 @@ def get_api_key() -> str:
     if secret:
         return secret
     else:
+        return "hello"
         #local testing
         with open('.key') as f:
             return f.read()
@@ -30,8 +31,9 @@ def add():
   else:
     token=get_api_key()
     if token != None:
-        ret = addWorker(token,request.form['num'])
-        return ret
+        return token
+        #ret = addWorker(token,request.form['num'])
+        #return ret
     else:
         return "Nope"
 
