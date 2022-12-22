@@ -24,7 +24,7 @@
     "enableDisplay": false
   },
   "guestAccelerators": [],
-  "keyRevocationActionType": "NONE",
+  "keyRevocationActionType": "STOP",
   "labels": {},
   "machineType": "projects/practical-lodge-372412/zones/europe-west1-b/machineTypes/e2-medium",
   "metadata": {
@@ -48,9 +48,6 @@
       "subnetwork": "projects/practical-lodge-372412/regions/europe-west1/subnetworks/default"
     }
   ],
-  "params": {
-    "resourceManagerTags": {}
-  },
   "reservationAffinity": {
     "consumeReservationType": "ANY_RESERVATION"
   },
@@ -62,7 +59,7 @@
   },
   "serviceAccounts": [
     {
-      "email": "1081211503118-compute@developer.gserviceaccount.com",
+      "email": "569439294570-compute@developer.gserviceaccount.com",
       "scopes": [
         "https://www.googleapis.com/auth/devstorage.read_only",
         "https://www.googleapis.com/auth/logging.write",
