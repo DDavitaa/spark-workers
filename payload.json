@@ -59,7 +59,7 @@
   },
   "serviceAccounts": [
     {
-      "email": "1081211503118-compute@developer.gserviceaccount.com",
+      "email": "david.davitashvili11@gmail.com",
       "scopes": [
         "https://www.googleapis.com/auth/devstorage.read_only",
         "https://www.googleapis.com/auth/logging.write",
