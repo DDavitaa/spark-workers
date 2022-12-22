@@ -28,12 +28,13 @@ def add():
   if request.method=='GET':
     return "Use post to add" # replace with form template
   else:
-    token=get_api_key()
-    if token != None:
-        #ret = addWorker(token,request.form['num'])
-        return token
-    else:
-        return "Nope"
+        return "this is working"
+    #token=get_api_key()
+#     if token != None:
+#         #ret = addWorker(token,request.form['num'])
+#         return token
+#     else:
+#         return "Nope"
 
 
 def addWorker(token, num):
