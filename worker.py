@@ -37,12 +37,11 @@ def add():
 
 
 def addWorker(token, num):
-    return token
-    
     with open('payload.json') as p:
-      tdata=json.load(p)
+        tdata=json.load(p)
     tdata['name']='slave'+str(num)
     data=json.dumps(tdata)
+    return data
     url='https://www.googleapis.com/compute/v1/projects/practical-lodge-372412/zones/europe-west1-b/instances'
     headers={"Authorization": "Bearer "+token}
     resp=requests.post(url,headers=headers, data=data)
