@@ -30,10 +30,8 @@ def add():
   else:
     token=get_api_key()
     if token != None:
-        return token
-        #return token
-        #ret = addWorker(token,request.form['num'])
-        #return ret
+        ret = addWorker(token,request.form['num'])
+        return ret
     else:
         return "Nope"
 
