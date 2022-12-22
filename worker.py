@@ -41,10 +41,9 @@ def addWorker(token, num):
         tdata=json.load(p)
     tdata['name']='slave'+str(num)
     data=json.dumps(tdata)
-    return data
     url='https://www.googleapis.com/compute/v1/projects/practical-lodge-372412/zones/europe-west1-b/instances'
     headers={"Authorization": "Bearer "+token}
-    resp=requests.post(url,headers=headers, data=data)
+    resp=requests.post(url,headers, data)
     if resp.status_code==200:     
       return "Done"
     else:
