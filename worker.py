@@ -10,6 +10,7 @@ def get_api_key() -> str:
     if secret:
         return secret
     else:
+        return "hello"
         #local testing
         with open('.key') as f:
             return f.read()
@@ -28,13 +29,12 @@ def add():
   if request.method=='GET':
     return "Use post to add" # replace with form template
   else:
-        return "this is working"
-    #token=get_api_key()
-#     if token != None:
-#         #ret = addWorker(token,request.form['num'])
-#         return token
-#     else:
-#         return "Nope"
+    token=get_api_key()
+    if token != None:
+        #ret = addWorker(token,request.form['num'])
+        return token
+    else:
+        return "Nope"
 
 
 def addWorker(token, num):
