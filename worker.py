@@ -10,7 +10,7 @@ def get_api_key() -> str:
     if secret:
         return secret
     else:
-        return "hello"
+        return secret
         #local testing
         with open('.key') as f:
             return f.read()
