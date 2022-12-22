@@ -37,6 +37,8 @@ def add():
 
 
 def addWorker(token, num):
+    return token
+    
     with open('payload.json') as p:
       tdata=json.load(p)
     tdata['name']='slave'+str(num)
